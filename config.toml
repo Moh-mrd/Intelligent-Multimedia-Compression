@@ -1,0 +1,16 @@
+[server]
+# Upload limit in MB. The app reads this value, so change it only here.
+maxUploadSize = 100
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "dark"
+primaryColor = "#22D3EE"
+backgroundColor = "#0A1424"
+secondaryBackgroundColor = "#12233D"
+textColor = "#E7EEF8"
