@@ -1,6 +1,8 @@
 [server]
-# Upload limit in MB. The app reads this value, so change it only here.
-maxUploadSize = 100
+maxUploadSize = 50            # MB. The app reads this value, so change it only here.
+headless = true
+enableCORS = false            # needed when the app is shown inside the Hugging Face iframe
+enableXsrfProtection = false  # otherwise file uploads fail with 403 inside that iframe
 
 [browser]
 gatherUsageStats = false

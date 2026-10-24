@@ -1,2 +1,14 @@
+# CPU build of PyTorch (smaller than the default CUDA build). Ignored on Windows/macOS where PyPI is already CPU.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 streamlit>=1.45.0
-requests>=2.31.0
+torch>=2.1
+torchvision
+compressai>=1.2.6
+pytorch-msssim
+pillow
+
+# CompressAI needs NumPy 1.x. These versions are known to work with it:
+numpy>=1.26,<2
+pandas<2.3
+pyarrow>=14,<20
